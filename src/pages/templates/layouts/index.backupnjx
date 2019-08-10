@@ -1,0 +1,74 @@
+<div class="wrapper">
+
+    <nav class="nav-open">
+
+        <header>
+            <div class="header-container">
+                <span>John </span>
+                <button class="click-me" data-target="nav" data-action="toggleClass" data-params="nav-open,nav-close">Stuff</button>
+            </div>
+        </header>
+
+        <ul>
+            <li><span class="nav-title">Navigation</span></li>
+            <li><a class="active">Dashboard</a></li>
+            <li><a>Statistics</a></li>
+            <li><a>Roadmap</a></li>
+            <li><a>Milestones</a></li>
+            <li><a>Tickets</a></li>
+            <li><a>GitHub</a></li>
+            <li><a>FAQ</a></li>
+            <li><span>Other</span></li>
+            <li><a>Search</a></li>
+            <li><a>Settings</a></li>
+            <li><a>Logout</a></li>
+        </ul>
+
+    </nav>
+
+    <main>
+
+        <h1>Flexbox Admin Template</h1>
+
+        <div class="panel-container">
+            <div class="panel">
+                <div class="panel-head"><span class="panel-title">Clean CSS Code</span><span class="panel-tools"><i class="fa fa-times" aria-hidden="true"></i></span></div>
+                <div class="panel-body">
+                    <ul>
+                        <li>no position: absolute</li>
+                        <li>no float</li>
+                        <li>no clearfix</li>
+                        <li>no faux columns</li>
+                        <li>no javascript</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel-container">
+<div class="panel">
+                <div class="panel-head"><span class="panel-title">Clean CSS Code</span><span class="panel-tools"><i class="fa fa-times" aria-hidden="true"></i></span></div>
+                <div class="panel-body">
+                    <ul>
+                        <li>no position: absolute</li>
+                        <li>no float</li>
+                        <li>no clearfix</li>
+                        <li>no faux columns</li>
+                        <li>no javascript</li>
+                    </ul>
+                </div>
+            </div>
+          <div class="panel">
+                <div class="panel-head"><span class="panel-title">Clean CSS Code</span><span class="panel-tools"><i class="fa fa-times" aria-hidden="true"></i></span></div>
+                <div class="panel-body">
+                    <ul>
+                        <li>no position: absolute</li>
+                        <li>no float</li>
+                        <li>no clearfix</li>
+                        <li>no faux columns</li>
+                        <li>no javascript</li>
+                    </ul>
+                </div>
+            </div>
+        </div>

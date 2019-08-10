@@ -1,0 +1,12 @@
+{% macro panelmacro(panelTitle, panelContent, panelId) %}
+
+    <!-- panel start -->
+    <div class="panel" id="{{ panelID}}">
+        <div class="panel-head"><span class="panel-title">{{ panelTitle }}</span><span class="panel-tools"><i
+                        class="fa fa-times" aria-hidden="true"></i></span></div>
+        <div class="panel-body">
+           {{ panelContent }}
+        </div>
+    </div>
+    <!-- panel end -->
+{% endmacro %}

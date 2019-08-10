@@ -1,0 +1,48 @@
+$base00: #000000;
+$base01: #404040;
+$base02: #606060;
+$base03: #808080;
+$base04: #c0c0c0;
+$base05: #d0d0d0;
+$base06: #e0e0e0;
+$base07: #ffffff;
+$base08: #ff0000;
+$base09: #ff9900;
+$base0A: #ff0099;
+$base0B: #33ff00;
+$base0C: #00ffff;
+$base0D: #0066ff;
+$base0E: #cc00ff;
+$base0F: #3300ff;
+
+$theme-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+                (
+                        "base00": $base00,
+                        "base01": $base01,
+                        "base02": $base02,
+                        "base03": $base03,
+                        "base04": $base04,
+                        "base05": $base05,
+                        "base06": $base06,
+                        "base07": $base07,
+                        "base08": $base08,
+                        "base09": $base09,
+                        "base0A": $base0A,
+                        "base0B": $base0B,
+                        "base0C": $base0C,
+                        "base0D": $base0D,
+                        "base0E": $base0E,
+                        "base0F": $base0F,
+                ),
+                $theme-colors
+);
+
+
+:root {
+  @each $color, $value in $theme-colors {
+    --#{$color}: #{$value};
+  }
+}
+

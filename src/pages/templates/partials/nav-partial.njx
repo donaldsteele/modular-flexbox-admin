@@ -1,0 +1,22 @@
+<nav class="nav-open">
+    <header>
+        <div class="header-container">
+            <span>John </span>
+            <button class="actionable" data-target="nav" data-action="toggleClass" data-params="nav-open">Stuff</button>
+        </div>
+    </header>
+    <ul>
+        <li><span class="nav-title">Navigation</span></li>
+        <li><a class="active">Dashboard</a></li>
+        <li><a>Statistics</a></li>
+        <li><a>Roadmap</a></li>
+        <li><a>Milestones</a></li>
+        <li><a>Tickets</a></li>
+        <li><a>GitHub</a></li>
+        <li><a>FAQ</a></li>
+        <li><span>Other</span></li>
+        <li><a>Search</a></li>
+        <li><a>Settings</a></li>
+        <li><a>Logout</a></li>
+    </ul>
+</nav>

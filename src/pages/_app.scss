@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
+
+/* more themes and colors available at
+https://github.com/samme/base16-styles/
+*/
+$base00: #000000;
+$base01: #404040;
+$base02: #606060;
+$base03: #808080;
+$base04: #c0c0c0;
+$base05: #d0d0d0;
+$base06: #e0e0e0;
+$base07: #ffffff;
+$base08: #ff0000;
+$base09: #ff9900;
+$base0A: #ff0099;
+$base0B: #33ff00;
+$base0C: #00ffff;
+$base0D: #0066ff;
+$base0E: #cc00ff;
+$base0F: #3300ff;
+
+$color: $base02;
+$color-d: $base01;
+$color-l: $base03;
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:before, *:after {
+  content: '';
+  display: block;
+  position: absolute;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font: 15px/1 'Open Sans', sans-serif;
+  color: $base00;
+}
+
+a {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  display: flex;
+  min-height: 100%;
+}
+
+nav {
+  background: $color;
+}
+
+nav.nav-open {
+  width: 200px;
+}
+
+
+nav header {
+  position: relative;
+  height: 80px;
+  padding: 20px 0 0 15px;
+  font-size: 16px;
+  color: $base05;
+  background: $base02;
+  border-bottom: 1px solid $base00;
+}
+
+
+nav header .header-container {
+  position: relative;
+  display: inline-block;
+  margin: 0 10px 0 0;
+
+}
+
+
+nav header .header-container span:before {
+  content: '\f08b';
+  position: relative;
+  font: normal 20px fontawesome;
+  display: inline-block;
+}
+
+nav ul span {
+  display: block;
+  padding: 15px;
+  color: rgba(255, 255, 255, .5);
+  text-transform: uppercase;
+  border-bottom: 1px solid $color-d;
+}
+
+nav ul a {
+  position: relative;
+  display: block;
+  padding: 15px 15px 17px 50px;
+  color: #fff;
+  border-bottom: 1px solid $color-d;
+}
+
+nav ul a:hover,
+nav ul a.active {
+  background: $color-l;
+}
+
+nav ul a:before {
+  font: normal 16px fontawesome;
+  top: 15px;
+  left: 18px;
+}
+
+nav ul li:nth-child(2) a:before {
+  content: '\f00a';
+}
+
+nav ul li:nth-child(3) a:before {
+  content: '\f012';
+}
+
+nav ul li:nth-child(4) a:before {
+  content: '\f018';
+}
+
+nav ul li:nth-child(5) a:before {
+  content: '\f024';
+}
+
+nav ul li:nth-child(6) a:before {
+  content: '\f0c3';
+}
+
+nav ul li:nth-child(7) a:before {
+  content: '\f09b';
+}
+
+nav ul li:nth-child(8) a:before {
+  content: '\f0fa';
+}
+
+nav ul li:nth-child(10) a:before {
+  content: '\f002';
+}
+
+nav ul li:nth-child(11) a:before {
+  content: '\f085';
+}
+
+nav ul li:nth-child(12) a:before {
+  content: '\f08b';
+}
+
+main {
+  flex: 1;
+  padding: 25px;
+  background: $base00;
+}
+
+main h1 {
+  height: 80px;
+  margin: -25px -25px 25px -25px;
+  padding: 0 25px;
+  line-height: 76px;
+  font-size: 24px;
+  font-weight: 400;
+  background: $base01;
+  color: $base05;
+
+}
+
+.panel-container {
+  display: flex;
+}
+
+.panel-container > div {
+  flex: 1;
+  margin: 0 20px 20px 0;
+  padding: 15px;
+  border: 1px solid $base01;
+  background: $base06;
+}
+
+.panel-container > div:last-child {
+  margin-right: 0;
+}
+
+.panel-container .panel-head {
+
+  margin: -15px -15px 15px -15px;
+  padding: 12px 15px;
+  font-size: 14px;
+  font-weight: 400;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  vertical-align: top;
+  justify-content: space-between;
+  background: linear-gradient(to bottom, $base03 0%, $base01 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.panel-head .panel-title {
+  color: $base06;
+}
+
+.panel-head .panel-tools {
+  color: $base06;
+}
+
+.panel-head .panel-tools i {
+  display: inherit;
+}
+
+.panel-container li {
+  position: relative;
+  margin: 0 0 10px;
+  padding: 0 0 0 25px;
+}
+
+.panel-container li:before {
+  content: '\f00c';
+  font: normal 16px fontawesome;
+  top: 0;
+  left: 0;
+  color: $base08;
+}
+
+
+/*
+** Media Queries
+***********************************************************/
+
+@media (max-width: 1000px) {
+
+  .panel-container {
+    flex-direction: column;
+  }
+
+  .panel-containerl > div {
+    margin-right: 0;
+  }
+
+}
+
+
+.dualpanel {
+  .row {
+    display: flex;
+    height: 100vh;
+  }
+
+  .virtical {
+    flex-direction: row;
+  }
+
+  .horizontal {
+    flex-direction: column;
+  }
+
+  .flex {
+    flex: 1;
+  }
+
+  .row, .row > * {
+    border: 1px solid;
+  }
+}

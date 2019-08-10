@@ -1,0 +1,10 @@
+{% macro panelwrappermacro(panels) %}
+    {% import "panel-partial.njx" as p %}
+    {% set i = 1 %}
+<div class="panel-container">
+    {% for panel in panels %}
+        {{ p.panelmacro(panel.title, panel.content) }}
+    {% endfor %}
+</div>
+
+{% endmacro %}

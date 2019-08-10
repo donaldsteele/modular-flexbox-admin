@@ -1,0 +1,12 @@
+{
+  "panels": [
+    {
+      "title": "test",
+      "content": "<h1>this is a test</h1>"
+    },
+    {
+      "title": "moo",
+      "content": "wow"
+    }
+  ]
+}

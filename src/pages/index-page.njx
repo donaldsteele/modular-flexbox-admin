@@ -1,0 +1,5 @@
+<!-- index-page.njx -->
+{% extends "default-layout.njx" %}
+{% import "panel-container-partial.njx" as pw %}
+{% block nav %} {% include "nav-partial.njx" %} {% endblock %}
+{% block content %} {{ pw.panelwrappermacro(panels) }} {% endblock %}

@@ -2,7 +2,7 @@
     <header>
         <div class="header-container">
             <span>John </span>
-            <button class="actionable" data-target="nav" data-action="toggleClass" data-params="nav-open">Stuff</button>
+            <button class="actionable button base08" data-target="nav" data-action="toggleClass" data-params="nav-open">Stuff</button>
         </div>
     </header>
     <ul>

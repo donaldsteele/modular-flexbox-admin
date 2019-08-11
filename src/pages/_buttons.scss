@@ -1,0 +1,80 @@
+
+.button {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  margin: .2rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  text-decoration: none;
+
+  &.round {
+    border-radius: 50%;
+    min-width: initial;
+    min-height: initial;
+    width: 3em;
+    height: 3em;
+    font-size: 1.25rem;
+    line-height: 47px;
+
+  }
+
+  &.small {
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+
+    &.round {
+      border-radius: 50%;
+      font-size: .96154rem;
+      line-height: 36.15385px;
+
+    }
+  }
+
+  &.large {
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+
+    &.round {
+      border-radius: 50%;
+      min-width: initial;
+      min-height: initial;
+
+      font-size: 1.625rem;
+      line-height: 61.1px;
+
+    }
+  }
+}
+
+/* create all the classes we need */
+
+.button {
+  @each $color, $value in $theme-colors {
+    &.#{$color} {
+      background: var(--#{$color});
+      color: var(--#{$color}-text);
+    }
+    &.#{$color}:active:focus {
+      background: var(--#{$color}-lighter);
+      color: var(--#{$color}-text);
+    }
+    &.#{$color}:hover {
+      background: var(--#{$color}-darker);
+      color: var(--#{$color}-text);
+    }
+  }
+}

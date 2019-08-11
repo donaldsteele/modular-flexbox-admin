@@ -1,0 +1,69 @@
+
+.panel-container {
+  display: flex;
+}
+
+.panel-container > div {
+  flex: 1;
+  margin: 0 20px 20px 0;
+  padding: 15px;
+  border: 1px solid var(--base01);
+  background: var(--section-body);
+}
+
+.panel-container > div:last-child {
+  margin-right: 0;
+}
+
+.roundtop {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.roundbottom {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.panel-container .panel-head {
+
+  margin: -15px -15px 15px -15px;
+  padding: 12px 15px;
+  font-size: 14px;
+  font-weight: 400;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  vertical-align: top;
+  justify-content: space-between;
+  background: linear-gradient(to bottom, var(--background) 0%, var(--section) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.panel-head .panel-title {
+  color: var(--section-text);
+}
+
+.panel-head .panel-tools {
+  color: var(--section-text);
+}
+
+.panel-head .panel-tools i {
+  display: inherit;
+}
+
+.panel-body {
+  color: var(--section-text);
+}
+
+.panel-container li {
+  position: relative;
+  margin: 0 0 10px;
+  padding: 0 0 0 25px;
+}
+
+.panel-container li:before {
+  content: '\f00c';
+  font: normal 16px fontawesome;
+  top: 0;
+  left: 0;
+  color: var(--base08);
+}

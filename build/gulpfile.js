@@ -23,6 +23,7 @@ plugins.concat = require('gulp-concat');
 plugins.inject = require('gulp-inject');
 plugins.util = require('gulp-util');
 plugins.debug = require('gulp-debug');
+plugins.cleancss = require('gulp-clean-css');
 /********************************************
  *            Configs And Paths
  *********************************************/

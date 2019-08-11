@@ -24,22 +24,23 @@ module.exports.task = function (gulp, plugins, paths) {
                         .on('error', plugins.sass.logError)
                 )
                 .pipe(plugins.autoprefixer())
+                .pipe(plugins.cleancss())
                 .pipe(gulp.dest(config.destDir + '/css/themes'))
                 .pipe(plugins.connect.reload());
 
         });
-        var sources = gulp.src(config.destDir + '/css/themes/*.css', {read: false})
-            .pipe(plugins.debug({title: 'd'}));
+        var sources = gulp.src(config.destDir + '/css/themes/*.css', {read: false});
+
 
         plugins.util.log('loading the index.html file now');
         gulp.src(config.destDir + '/index.html')
             .pipe(plugins.inject(sources, {
                     transform: function (filepath) {
-                        return '<link rel="alternate stylesheet" type="text/css" href="' + filepath + '" title="' + plugins.path.basename(filepath, '.css') + '"/>';
+                        return '<link rel="alternate stylesheet" type="text/css" href="' + 'css/themes/' + plugins.path.basename(filepath) + '" title="' + plugins.path.basename(filepath, '.css') + '"/>';
                     }
                 }
             ))
-            .pipe(gulp.dest(config.destDir + '/inj'));
+            .pipe(gulp.dest(config.destDir));
 
         done();
     };

@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
+
+/* more themes and colors available at
+https://github.com/samme/base16-styles/
+*/
+
+
+$color: var(--color);
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:before, *:after {
+  content: '';
+  display: block;
+  position: absolute;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font: 15px/1 'Open Sans', sans-serif;
+  color: var(--color);
+  background: var(--background);
+}
+
+a {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  display: flex;
+  min-height: 100%;
+}
+
+main {
+  flex: 1;
+  padding: 25px;
+  background: var(--section);
+  color: var(--color);
+}
+
+/* Default values are skipped */
+.flex {
+  &.wrapper-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+
+  &.child-right {
+    margin-left: auto;
+    order: 99;
+  }
+
+}
+
+main #topBar {
+  height: 80px;
+  margin: -25px -25px 25px -25px;
+  padding: 0 25px;
+  background: var(--control);
+  color: var(--control-text);
+}
+
+main h1 {
+  height: 80px;
+  margin: -25px -25px 25px -25px;
+  padding: 0 25px;
+  line-height: 76px;
+  font-size: 24px;
+  font-weight: 400;
+
+
+}
+
+
+/*
+** Media Queries
+***********************************************************/
+
+@media (max-width: 1000px) {
+
+  .panel-container {
+    flex-direction: column;
+  }
+
+  .panel-containerl > div {
+    margin-right: 0;
+  }
+
+}
+
+
+.dualpanel {
+  .row {
+    display: flex;
+    height: 100vh;
+  }
+
+  .virtical {
+    flex-direction: row;
+  }
+
+  .horizontal {
+    flex-direction: column;
+  }
+
+  .flex {
+    flex: 1;
+  }
+
+  .row, .row > * {
+    border: 1px solid;
+  }
+}
+
+
+.glass {
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  border: 2px solid #DDDBD7;
+  -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4), inset 0 0 5px rgba(255, 255, 255, 0.8);
+  -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4), inset 0 0 5px rgba(255, 255, 255, 0.8);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4), inset 0 0 5px rgba(255, 255, 255, 0.8);
+}

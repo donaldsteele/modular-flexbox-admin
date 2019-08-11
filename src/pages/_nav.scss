@@ -1,0 +1,112 @@
+
+nav {
+  background: var(--control);
+}
+
+nav.nav-open {
+  width: 200px;
+}
+
+
+nav header {
+  position: relative;
+  height: 80px;
+  padding: 20px 0 0 15px;
+  font-size: 16px;
+  color: var(--control-text);
+  background: var(--control);
+  border-bottom: 1px solid var(--control-border);
+}
+
+
+nav header .header-container {
+  position: relative;
+  display: inline-block;
+  margin: 0 10px 0 0;
+
+}
+
+
+nav header .header-container span:before {
+  content: '\f08b';
+  position: relative;
+  font: normal 20px fontawesome;
+  display: inline-block;
+}
+
+nav ul span {
+  display: block;
+  padding: 15px;
+  color: var(--control-text);
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--control-border);
+}
+
+nav ul a {
+  position: relative;
+  display: block;
+  padding: 15px 15px 17px 50px;
+  color: var(--control-text);
+  border-bottom: 1px solid var(--control-border);
+}
+
+nav ul a:hover,
+nav ul a.active {
+  background: var(--control-highlight);
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  border: 2px solid #DDDBD7;
+  -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4), inset 0 0 5px rgba(255, 255, 255, 0.8);
+  -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4), inset 0 0 5px rgba(255, 255, 255, 0.8);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4), inset 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+nav ul a:before {
+  font: normal 16px fontawesome;
+  top: 15px;
+  left: 18px;
+}
+
+nav ul li:nth-child(2) a:before {
+  content: '\f00a';
+}
+
+nav ul li:nth-child(3) a:before {
+  content: '\f012';
+}
+
+nav ul li:nth-child(4) a:before {
+  content: '\f018';
+}
+
+nav ul li:nth-child(5) a:before {
+  content: '\f024';
+}
+
+nav ul li:nth-child(6) a:before {
+  content: '\f0c3';
+}
+
+nav ul li:nth-child(7) a:before {
+  content: '\f09b';
+}
+
+nav ul li:nth-child(8) a:before {
+  content: '\f0fa';
+}
+
+nav ul li:nth-child(10) a:before {
+  content: '\f002';
+}
+
+nav ul li:nth-child(11) a:before {
+  content: '\f085';
+}
+
+nav ul li:nth-child(12) a:before {
+  content: '\f08b';
+}

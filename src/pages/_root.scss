@@ -1,4 +1,3 @@
-
 $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $theme-colors: map-merge(
@@ -42,7 +41,15 @@ $theme-colors: map-merge(
     --#{$color}-darker: #{$darker};
     --#{$color}-text: #{$text};
   }
+
+  --color: var(--base00-text);
+  --background: var(--base00);
+  --section: var(--base02);
+  --section-body: var(--base02-lighter);
+  --section-text: var(--base02-text);
+  --control: var(--base03);
+  --control-text: var(--base03-text);
+  --control-border: var(--base03-darker);
+  --control-highlight: var(--base03-lighter);
+
 }
-
-
-
